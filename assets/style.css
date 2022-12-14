@@ -3,7 +3,9 @@
 * {
 	margin: 0;
 	padding: 0;
+    list-style: none;
 }
+
 body{
     background-color: #424240;
     font-family: 'Space Mono', monospace;
@@ -61,4 +63,22 @@ body{
 .content-main > section > p{
     text-align: center;
     padding: 20px;
+}
+
+.icon{
+    width: 30px;
+}
+.list-icons-links{
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+}
+
+.container-footer{
+    padding: 8px 0 2px;
+    text-align: center;
+    background-color: #8376a6;
+}
+.credits{
+    font-size: 10px;
 }
