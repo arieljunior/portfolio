@@ -1,14 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
 
 * {
 	margin: 0;
 	padding: 0;
-    list-style: none;
+	list-style: none;
+	color: #f1f5f4;
 }
 
-body{
-    background-color: #424240;
-    font-family: 'Space Mono', monospace;
+body {
+	background-color: #424240;
+	font-family: "Space Mono", monospace;
 }
 .profile-img {
 	width: 150px;
@@ -34,61 +35,88 @@ body{
 }
 
 .menu > a {
-    text-decoration: none;
-    background-color: #fef54b;
-    color: #424241;
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-    font-weight: bolder;
+	text-decoration: none;
+	background-color: #fef54b;
+	color: #424241;
+	padding: 10px;
+	border-radius: 5px;
+	text-align: center;
+	font-weight: bolder;
 }
 
-.menu > a:hover{
-    background-color: #cbc101;
+.menu > a:hover {
+	background-color: #cbc101;
 }
 
 .content-main {
-    margin-top: 45px;
-    color: #f1f5f4;
-    display: grid;
-    gap: 40px;
+	margin-top: 45px;
+	display: grid;
+	gap: 40px;
 }
 
 .content-main > section > h2 {
-    border-bottom: 1px solid #42f9fa;
-    padding: 20px;
+	border-bottom: 1px solid #42f9fa;
+	padding: 20px;
 }
 
 .content-main > section {
-    border-radius: 4px;
-    background-color: #594163;
+	border-radius: 4px;
+	background-color: #594163;
 }
 
-.content-main > section > p{
-    text-align: center;
-    padding: 20px;
+.content-main > section > p {
+	text-align: center;
+	padding: 20px;
 }
 
-.icon{
-    width: 30px;
-}
-.list-icons-links{
-    display: flex;
-    gap: 35px;
-    justify-content: center;
+.icon {
+	width: 30px;
 }
 
-.container-footer{
-    padding: 8px 0 2px;
-    text-align: center;
-    background-color: #8376a6;
+.icon-small {
+	width: 20px;
 }
-.credits{
-    font-size: 10px;
+
+.list-icons-links {
+	display: flex;
+	gap: 35px;
+	justify-content: center;
+}
+
+.container-footer {
+	padding: 8px 0 2px;
+	text-align: center;
+	background-color: #8376a6;
+}
+.credits {
+	font-size: 10px;
 }
 .credits > .authors {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+}
 
+.skills {
+	margin-top: 20px;
+    display: grid;
+    gap: 10px;
+}
+.skills > section > ul {
+	display: flex;
+	gap: 20px;
+}
+
+.skills > section > ul > li {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	text-transform: capitalize;
+}
+
+.skills > section > h6 {
+	margin-bottom: 5px;
+	border-bottom: 1px solid grey;
+	padding-bottom: 2px;
+	text-transform: capitalize;
 }
