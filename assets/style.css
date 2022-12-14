@@ -43,6 +43,10 @@ body{
     font-weight: bolder;
 }
 
+.menu > a:hover{
+    background-color: #cbc101;
+}
+
 .content-main {
     margin-top: 45px;
     color: #f1f5f4;
