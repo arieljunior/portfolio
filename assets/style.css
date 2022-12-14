@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+body{
+    background-color: #424240;
+    font-family: 'Space Mono', monospace;
+}
+.profile-img {
+	width: 150px;
+	height: 150px;
+	border-radius: 90px;
+}
+
+.header {
+	display: flex;
+	gap: 50px;
+}
+
+.container {
+	width: 80%;
+	margin: 50px auto;
+}
+
+.menu {
+	align-self: self-end;
+	display: flex;
+	width: 100%;
+	gap: 15px;
+}
+
+.menu > a {
+    text-decoration: none;
+    background-color: #fef54b;
+    color: #424241;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.content-main {
+    margin-top: 45px;
+    color: #f1f5f4;
+    display: grid;
+    gap: 40px;
+}
+
+.content-main > section > h2 {
+    border-bottom: 1px solid #42f9fa;
+    padding: 20px;
+}
+
+.content-main > section {
+    border-radius: 4px;
+    background-color: #594163;
+}
+
+.content-main > section > p{
+    text-align: center;
+    padding: 20px;
+}
