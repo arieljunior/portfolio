@@ -4,261 +4,130 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="assets/style.css" />
+		<link rel="stylesheet" href="./assets/css/index.css" />
+		<link rel="stylesheet" href="./assets/css/card.css" />
+		<link rel="stylesheet" href="./assets/css/collapse.css" />
 		<title>Ariel Junior</title>
 	</head>
 	<body>
 		<div class="container">
-			<header class="header">
-				<div>
+			<div class="">
+				<div class="container-img-profile">
 					<img
-						src="assets/profile.jpg"
+						src="assets/images/profile_cartoon.jpg"
 						alt="imagem de perfil do portfólio"
 						title="foto de perfil"
 						class="profile-img"
 					/>
 				</div>
-				<nav class="menu">
-					<a href="#sobre">Sobre mim</a>
-					<a href="#conhecimentos">Conhecimentos</a>
-					<a href="#projetos">Projetos</a>
-					<a href="#experiencias">Experiências</a>
-				</nav>
-			</header>
-
-			<div class="skills">
-				<section>
-					<h6>Linguagens / Frameworks</h6>
-					<ul>
-						<li>
-							<img
-								class="icon-small"
-								src="assets/icons/js.png"
-								alt="ícone javascript"
-							/>
-							<span>javascript</span>
-						</li>
-						<li>
-							<img
-								class="icon-small"
-								src="assets/icons/react.png"
-								alt="ícone react"
-							/>
-							<span>react</span>
-						</li>
-						<li>
-							<img
-								class="icon-small"
-								src="assets/icons/typescript.png"
-								alt="ícone typescript"
-							/>
-							<span>typescript</span>
-						</li>
-						<li>
-							<img
-								class="icon-small"
-								src="assets/icons/nodejs.png"
-								alt="ícone node express"
-							/>
-							<span>express</span>
-						</li>
-						<li>
-							<img
-								class="icon-small"
-								src="assets/icons/python.png"
-								alt="ícone python"
-							/>
-							<span>python</span>
-						</li>
-						<li>
-							<img
-								class="icon-small"
-								src="assets/icons/csharp.png"
-								alt="ícone csharp"
-							/>
-							<span>c#</span>
-						</li>
-						<li>
-							<img
-								class="icon-small"
-								src="assets/icons/html.png"
-								alt="ícone html"
-							/>
-							<span>html</span>
-						</li>
-						<li>
-							<img
-								class="icon-small"
-								src="assets/icons/css.png"
-								alt="ícone css"
-							/>
-							<span>css</span>
-						</li>
-					</ul>
-				</section>
-				<section>
-					<h6>banco de dados</h6>
-					<ul>
-						<li>
-							<img
-								class="icon-small"
-								src="assets/icons/mongodb.png"
-								alt="ícone mongodb"
-							/>
-							<span>mongoDB</span>
-						</li>
-						<li>
-							<img
-								class="icon-small"
-								src="assets/icons/sqlserver.png"
-								alt="ícone sql server"
-							/>
-							<span>SQL Server</span>
-						</li>
-						<li>
-							<img
-								class="icon-small"
-								src="assets/icons/mysql.png"
-								alt="ícone mysql"
-							/>
-							<span>mysql</span>
-						</li>
-					</ul>
-				</section>
-				<section>
-					<h6>Outros</h6>
-					<ul>
-						<li>
-							<img
-								class="icon-small"
-								src="assets/icons/clean-code.png"
-								alt="ícone clean code"
-							/>
-							<span>clean code</span>
-						</li>
-						<li>
-							<img
-								class="icon-small"
-								src="assets/icons/scrum.png"
-								alt="ícone scrum"
-							/>
-							<span>scrum</span>
-						</li>
-						<li>
-							<img
-								class="icon-small"
-								src="assets/icons/aws.png"
-								alt="ícone aws"
-							/>
-							<span>AWS</span>
-						</li>
-						<li>
-							<img
-								class="icon-small"
-								src="assets/icons/azure.png"
-								alt="ícone azure"
-							/>
-							<span>azure</span>
-						</li>
-					</ul>
-				</section>
+				<div class="skills">
+					<section>
+						<div class="title-filter-languages collapsible">
+							Filtrar linguagens
+						</div>
+						<ul id="totalizadores-linguagens" class="">
+							<li>...carregando</li>
+						</ul>
+					</section>
+				</div>
 			</div>
 
-			<main class="content-main">
-				<section id="sobre">
-					<h2>Sobre mim</h2>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae vel
-						repellat repellendus? Sit, maxime fuga explicabo repellat velit
-						commodi porro blanditiis sapiente! Maiores ad officia molestiae
-						sequi explicabo numquam delectus!
-					</p>
-				</section>
-				<section id="conhecimentos">
-					<h2>Conhecimentos</h2>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae vel
-						repellat repellendus? Sit, maxime fuga explicabo repellat velit
-						commodi porro blanditiis sapiente! Maiores ad officia molestiae
-						sequi explicabo numquam delectus!
-					</p>
-				</section>
-				<section id="projetos">
-					<h2>Projetos</h2>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae vel
-						repellat repellendus? Sit, maxime fuga explicabo repellat velit
-						commodi porro blanditiis sapiente! Maiores ad officia molestiae
-						sequi explicabo numquam delectus!
-					</p>
-				</section>
+			<div class="">
+				<main class="content-main">
+					<section id="sobre-mim">
+						<button
+							type="button"
+							class="collapsible collapsible-header active-collapse"
+						>
+							Sobre
+							<img
+								class="icon"
+								src="assets/icons/hello.png"
+								alt="ícone mãozinha"
+							/>
+						</button>
+						<div class="content-text content-hidden">
+							<p>
+								Olá, sou um programador Full-stack, com ênfase nas linguagens
+								Javascript e Python, que também gosta de explorar outras
+								linguagens
+								<s class="little-joke"
+									>, especialmente as que ajudam a pagar as contas 👀.</s
+								>
+							</p>
 
-				<section id="experiencias">
-					<h2>Experiências</h2>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae vel
-						repellat repellendus? Sit, maxime fuga explicabo repellat velit
-						commodi porro blanditiis sapiente! Maiores ad officia molestiae
-						sequi explicabo numquam delectus!
-					</p>
-				</section>
-			</main>
+							<p>
+								Este projeto foi desenvolvido para aprimorar minhas habilidades
+								de frontend e servir como um resumo dos projetos disponíveis no
+								meu GitHub. Vale ressaltar que ele está em constante evolução
+								<s class="little-joke"
+									>, mas somente enquanto eu tiver a energia e a vontade
+									necessária 🤗.</s
+								>
+							</p>
+							<p>
+								Espero que você, como visitante, goste do que encontrará aqui e,
+								se desejar, pode me seguir nas redes sociais listadas abaixo.
+							</p>
+
+							<!-- <p>
+								Espero que você visitante goste e, se quiser, me seguir nas redes sociais abaixo
+							</p> -->
+							<!-- <p> -->
+							<ul class="list-icons-links">
+								<li>
+									<a
+										target="_blank"
+										href="https://www.linkedin.com/in/ariel-junior-a292a511b/"
+										title="Linkedin"
+									>
+										<img
+											class="icon"
+											src="assets/icons/linkedin.png"
+											alt="ícone do linkedin"
+										/>
+									</a>
+								</li>
+								<li>
+									<a
+										target="_blank"
+										href="https://github.com/arieljunior"
+										title="Github"
+									>
+										<img
+											class="icon"
+											src="assets/icons/github.png"
+											alt="ícone do github"
+										/>
+									</a>
+								</li>
+								<li>
+									<a
+										target="_blank"
+										href="https://www.instagram.com/arieljuniorc"
+										title="Instagram"
+									>
+										<img
+											class="icon"
+											src="assets/icons/instagram.png"
+											alt="ícone do instagram"
+										/>
+									</a>
+								</li>
+							</ul>
+							<!-- </p> -->
+						</div>
+					</section>
+					<section id="projetos">
+						<button type="button" class="collapsible collapsible-header">
+							<span id="total-projetos"></span> Projetos no Github
+						</button>
+						<div class="content" id="container-projects">...carregando</div>
+					</section>
+				</main>
+			</div>
 		</div>
 		<footer class="container-footer">
-			<ul class="list-icons-links">
-				<li>
-					<a
-						target="_blank"
-						href="https://www.linkedin.com/in/ariel-junior-a292a511b/"
-						title="Linkedin"
-					>
-						<img
-							class="icon"
-							src="assets/icons/linkedin.png"
-							alt="ícone do linkedin"
-						/>
-					</a>
-				</li>
-				<li>
-					<a
-						target="_blank"
-						href="https://github.com/arieljunior"
-						title="Github"
-					>
-						<img
-							class="icon"
-							src="assets/icons/github.png"
-							alt="ícone do github"
-						/>
-					</a>
-				</li>
-				<li>
-					<a
-						target="_blank"
-						href="https://www.instagram.com/arieljuniorc"
-						title="Instagram"
-					>
-						<img
-							class="icon"
-							src="assets/icons/instagram.png"
-							alt="ícone do instagram"
-						/>
-					</a>
-				</li>
-				<li>
-					<a
-						target="_blank"
-						href="https://www.facebook.com/arieljuniorc"
-						title="Facebook"
-					>
-						<img
-							class="icon"
-							src="assets/icons/facebook.png"
-							alt="ícone do facebook"
-						/>
-					</a>
-				</li>
-			</ul>
 			<div class="credits">
 				<p>
 					Créditos dos ícones (<a
@@ -312,5 +181,7 @@
 				</ul>
 			</div>
 		</footer>
+		<script src="./assets/scripts/index.js"></script>
+		<script src="./assets/scripts/collapse.js"></script>
 	</body>
 </html>

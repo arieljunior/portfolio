@@ -1,0 +1,20 @@
+.collapsible {
+	cursor: pointer;
+}
+
+.collapsible::after{
+    content: '\2212';
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.collapsible.active-collapse:after {
+    content: "\002B";
+}
+
+.content-hidden {
+    height: 0;
+    visibility: hidden;
+    padding: 0;
+}
